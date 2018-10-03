@@ -22,8 +22,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('subscribe', views.showsubs, name='subscribe'),
-    path('process/subscribe', views.save_subscribe),
-    path('',views.showsubs)
+    #path('subscribe', views.showsubs, name='subscribe'),
+    #path('process/subscribe', views.save_subscribe),
+    #path('',views.showsubs),
+    path('image', views.showimg, name='image')
 
 ]+static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
